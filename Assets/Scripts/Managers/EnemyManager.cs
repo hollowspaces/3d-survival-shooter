@@ -6,8 +6,7 @@ public class EnemyManager : MonoBehaviour
     public float spawnTime = 3f;
     public Transform[] spawnPoints;
 
-    [SerializeField]
-    MonoBehaviour factory;
+    [SerializeField] MonoBehaviour factory;
     IFactory Factory { get { return factory as IFactory; } }
 
     void Start ()
